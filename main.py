@@ -3,15 +3,11 @@ try:
 
     data_enter = int(input("- "))
 
-    number = 1
+    fibonacci_secunce = [0, 1, 1, 2]
 
-    fibonacci_secunce = []
-
-    while number < data_enter:
+    while fibonacci_secunce[-1] < data_enter:
     
-        fibonacci_secunce.append(number)
-    
-        number += number
+        fibonacci_secunce.append(fibonacci_secunce[-1] + fibonacci_secunce[-2])
     
     print(fibonacci_secunce)  
 
